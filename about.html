@@ -9,22 +9,33 @@
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      font-family: "Microsoft YaHei", sans-serif;
+      font-family: "Segoe UI", "Microsoft YaHei", sans-serif;
     }
     body {
-      background: #0f172a;
+      min-height: 100vh;
+      background: linear-gradient(135deg, #1e293b, #0f172a);
       color: #fff;
       text-align: center;
-      padding-top: 80px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 30px;
     }
     h1 {
-      font-size: 32px;
+      font-size: 36px;
       margin-bottom: 30px;
+      color: #f8fafc;
+      text-shadow: 0 0 12px rgba(59, 130, 246, 0.4);
+    }
+    .content {
+      max-width: 700px;
+      line-height: 1.8;
     }
     p {
       font-size: 18px;
       color: #cbd5e1;
-      margin-bottom: 40px;
+      margin-bottom: 20px;
     }
     .btn {
       background: linear-gradient(90deg, #3b82f6, #1d4ed8);
@@ -33,12 +44,23 @@
       border-radius: 12px;
       text-decoration: none;
       font-weight: bold;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(59, 130, 246, 0.4);
+      margin-top: 20px;
+    }
+    .btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 20px rgba(59, 130, 246, 0.6);
     }
   </style>
 </head>
 <body>
   <h1>了解我们</h1>
-  <p>成都市一家人智芯科技有限公司（请勿当真），世界上最伟大的公司，创建于2026年2月15日。当狙课堂的第一行代码被敲出时，一家人的梦想种子也正式发芽</p>
+  <div class="content">
+    <p>成都市一家人智芯科技有限公司（请勿当真），世界上最伟大的公司，创建于2026年2月15日。</p>
+    <p>当狙课堂的第一行代码被敲出时，一家人的梦想种子也正式发芽。</p>
+    <p>我们制作软件、来源电路板、文创物品等有趣的产品。</p>
+  </div>
 
   <a href="index.html" class="btn">返回首页</a>
 </body>
